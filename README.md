@@ -1,5 +1,5 @@
 # Seal-Lengths
-A custom function to measure the lengths and widths of polygons representing seals automatically identified from drone images
+A custom R function to measure the lengths and widths of polygons representing seals automatically identified from drone images
 
 Seal_Length_Function contains the function to extract the curved length and width from a sf spatial polygon (assuming the correct projection system, values will be given in the approprioate projection unit)
 
