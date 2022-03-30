@@ -21,14 +21,6 @@ clip_add = 30 #a small region at the end of each polygon is measured as a straig
 
 bu = 2 #the bandwidth value for smoothing - which removes or reduces the impact of seal limbs on measurments
 
-#seals = st_transform(seals,23032) #format
-seals = st_read("seal-pups_02-08-21_1241.shp")
-
-processed_data[395,]
-
-p = seals[39,]
-curved_length(p,plt = TRUE)
-
 #########################################
 
 apex = function(poly){
@@ -86,7 +78,6 @@ midpoint = function(sf_lines = NULL){
 }
 
 #########################################
-#seven is two seals... consider adding watershed to overly large seals and see what they look like, otherwise exclude them
 
 curved_length = function(p,plt){
 
@@ -104,8 +95,6 @@ curved_length = function(p,plt){
   }
 	
 	buff = st_distance(flipper_apex,smooth_apex)
-
-#	pol2 = st_buffer(pol2, buff)
 
 	pline = st_cast(pol2, "LINESTRING")
 
