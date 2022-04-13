@@ -1,6 +1,6 @@
 #Daire Carroll, Gothenburg University, 2021
 #script to develop some potential demographic scenarios for an observed populaiton growht rate under the assumption of assymptotic growth
-#for harbour seals aquired from https://sharkweb.smhi.se/hamta-data/
+#for harbour seal survey data aquired from https://sharkweb.smhi.se/hamta-data/
 
 graphics.off() 
 setwd("C:/Users/daire/Desktop/Drones")
