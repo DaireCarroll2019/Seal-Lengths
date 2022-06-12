@@ -5,11 +5,14 @@
 
 if(!require("sf")){
   install.packages("sf",dependencies = TRUE)
-}else if(!require("smoothr")){
+} 
+if(!require("smoothr")){
   install.packages("smoothr",dependencies = TRUE)
-}else if(!require("reshape2")){
+} 
+if(!require("reshape2")){
   install.packages("reshape2",dependencies = TRUE)
-}else if(!require("lwgeom")){
+} 
+if(!require("lwgeom")){
   install.packages("lwgeom",dependencies = TRUE)
 }
 
